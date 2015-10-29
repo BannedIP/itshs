@@ -67,11 +67,12 @@
                     ?>
                </div>
                <div class="col-md-3">
-                   <?php if ( is_active_sidebar( 'header_top' ) ) : ?>
-                        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-                            <?php dynamic_sidebar( 'header_top' ); ?>
-                        </div><!-- #primary-sidebar -->
+                   <?php if ( is_active_sidebar( 'soc_icons' ) ) : ?>
+                    <div class="soc-icons">
+                    <?php dynamic_sidebar('soc_icons'); ?>
+                    </div>
                     <?php endif; ?>
+                    
                </div>
             </div>
        </div>

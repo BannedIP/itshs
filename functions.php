@@ -21,11 +21,12 @@ function arphabet_widgets_init() {
     //Register social-icons sidebar
 
     register_sidebar(array(
-        'name' => 'Social Icons',
+        'name'          => 'Social Icons',
+        'id'            => 'soc_icons',
         'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<div class="title">',
-        'after_title' => '</div>',
+        'after_widget'  => '',
+        'before_title' => '<span style="display: none;">',
+        'after_title' => '</span>',
     ) );
 
 }
