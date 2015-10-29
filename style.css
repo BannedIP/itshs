@@ -18,7 +18,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0;
 	outline: 0;
 	padding: 0;
-	vertical-align: baseline;
+	/*vertical-align: baseline;*/
 }
 
 article,
@@ -166,8 +166,23 @@ sidebar {
 }
 /* social icons */
 .soc-icons {
-    padding: 2px 10px;
+    padding: 0px 10px;
     text-align: right;
+}
+#soc-icon {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    margin: 5px 5px;
+    float: right;
+    overflow: hidden;
+    background: url("images/soc/active.png");
+    background-position: 100px 0;
+    background-repeat: no-repeat; 
+}
+#soc-icon img {
+    position: absolute;
+    left: 0px;
 }
 h2.rounded {
     height: 2px;
@@ -175,14 +190,14 @@ h2.rounded {
 
 
 .carousel{
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
 .item{
     /*background: white;*/
     text-align: center;
-    height: 350px;
-    padding: 25px 50px;
+    height: 300px;
+    padding: 20px 50px;
 }
 .item h2 {
     margin: 0 0;
@@ -208,14 +223,23 @@ h2.rounded {
     margin-top: 15px;
     margin-bottom: 0px;
 }
+/*Carousel settings*/
+.carousel-indicators li {
+    background-color: #ff9900;
+    border: 2px solid #ff9900;
+}
 .carousel-container {
     background-color: white;
 }
 .carousel-caption {
     color: black;
 }
+.slider-image {
+    margin-right: 40px;
+}
+/*Service Block*/
 #services {
-    margin-top: 25px;
+    margin-top: 5px;
     line-height: 1.1em;
 }
 #services td{
