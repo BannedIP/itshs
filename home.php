@@ -68,9 +68,9 @@ get_header(); ?>
                     while ( $my_q->have_posts() ) {
                         $my_q->the_post();
                         //$more = 0;
-                        $service_count =+ 1;
+                        $service_count += 1;
                 ?>
-                    <div class="col-md-4"><?php the_content(); ?></div>
+                    <div class="col-md-4 col-xs-12 <?php echo $service_count; ?>"><?php the_content(); ?></div>
                 <?php
                     if ($service_count == 3 || $service_count == 6) {
                         echo "</div><div class=\"row\">";   

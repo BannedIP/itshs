@@ -12,6 +12,7 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" media="all" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/bootstrap.min.css">
     <link rel="stylesheet" media="all" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css">
 
@@ -22,11 +23,27 @@
     <header>
       <div class="container">
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col-xs-6">
                   <div id="logo"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/logo.jpg"></div>
             </div>
-            <div class="col-md-7">
+                        <div class="col-md-3 col-md-push-7 col-xs-6">
+                    <div id="phones">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/phone-mobile.png"/>&nbsp;<i >(044) 383-21-20 &nbsp;</i><br>
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/phone.png" style="margin:8px 0 6px 0;"/>&nbsp;<i >(067) 218-47-01 &nbsp;</i>
+                    </div>
+            </div>
+            <div class="col-md-7 col-md-pull-3 col-xs-12">
                    <nav id="topmenu" class="navbar navbar-default" role="navigation">
+                       <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          
+                       </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <?php
                             // Primary navigation menu.
                             wp_nav_menu( array(
@@ -38,14 +55,10 @@
                               'walker' => new wp_bootstrap_navwalker())
                             );
                         ?>
+                       </div>
                     </nav>
             </div>
-            <div class="col-md-3">
-                    <div id="phones">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/phone-mobile.png"/> : <i >.(044) 333-444-55.</i><br>
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/phone.png" style="margin:8px 0 6px 0;"/> : <i >.(044) 333-444-66.</i>
-                    </div>
-            </div>
+
           </div>
         </div>
     </header><!-- .site-header -->

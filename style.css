@@ -11,7 +11,7 @@ Version: 0.1
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
-	font-family: inherit;
+	font-family: 'Open Sans',sans-serif;
 	font-size: 100%;
 	font-style: inherit;
 	font-weight: inherit;
@@ -133,12 +133,35 @@ strong {
 	font-weight: 700;
 }
 
-@media screen and (max-width: 1200px) {
+
+
+@media screen and (max-width: 1280px) {
     #page {
         width: 1170px;
         margin: auto;
     }
 }
+
+@media screen and (max-width: 720px) {
+    #page {
+        width: 100%;
+        margin: auto;
+    }
+    .carousel-container {
+        display: none;
+    }
+    #phones {
+        font-size: 12px;
+    }
+    .top-news {
+        display: none;
+    }
+    .nav > li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 header {
     background: #20231c;
@@ -147,7 +170,7 @@ header {
 #phones {
     padding-top: 5px;
     color: white;
-    float:left;
+    float: right;
 }
 .top-news {
     padding: 5px 20px;
@@ -166,14 +189,14 @@ sidebar {
 }
 /* social icons */
 .soc-icons {
-    padding: 0px 10px;
+    padding: 0px -3px;
     text-align: right;
 }
 #soc-icon {
     width: 36px;
     height: 36px;
     position: relative;
-    margin: 5px 5px;
+    margin: 2px 2px;
     float: right;
     overflow: hidden;
     background: url("images/soc/active.png");
@@ -209,7 +232,9 @@ h2.rounded {
     float: left;
 }
 .nav>li>a {
-    padding: 10px 10px;
+    padding: 10px 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 }
 .nav>li>a:hover {
     background-color: #20231c;
@@ -241,6 +266,7 @@ h2.rounded {
 #services {
     margin-top: 5px;
     line-height: 1.1em;
+    font-size: 14px;
 }
 #services td{
     padding: 10px 10px 0px 10px;
@@ -253,5 +279,5 @@ h2.rounded {
 }
 #services a,
 #services a:active {
-    color: black;
+    color: #ff9900;
 }
