@@ -82,7 +82,10 @@ get_header(); ?>
                 ?>
                 </div>
            </div>
-
+    </div><!-- #container -->
+<div id="after_services">
+    
+</div>
 </div><!-- #content -->
 
 <?php

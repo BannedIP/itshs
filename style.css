@@ -60,7 +60,7 @@ textarea {
 }
 
 body {
-	background: #f5f5f5;
+	background: #f2f4f6;
 }
 
 a {
@@ -178,7 +178,7 @@ header {
 footer {
     background-color: #555;
     height: 120px;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 sidebar {
     width: 100%;
@@ -199,7 +199,7 @@ sidebar {
     margin: 2px 2px;
     float: right;
     overflow: hidden;
-    background: url("images/soc/active.png");
+    background: url("../../../wp-content/themes/itshs/images/soc/active.png");
     background-position: 100px 0;
     background-repeat: no-repeat; 
 }
@@ -255,6 +255,7 @@ h2.rounded {
 }
 .carousel-container {
     background-color: white;
+    border-bottom: 1px solid #ddd;
 }
 .carousel-caption {
     color: black;
@@ -280,4 +281,10 @@ h2.rounded {
 #services a,
 #services a:active {
     color: #ff9900;
+}
+#after_services {
+    min-height: 200px;
+    background: white;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
 }
